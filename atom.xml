@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ndergg.github.io</id>
     <title>再书卿-</title>
-    <updated>2019-08-19T15:07:02.429Z</updated>
+    <updated>2019-08-21T02:44:48.590Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ndergg.github.io"/>
     <link rel="self" href="https://ndergg.github.io/atom.xml"/>
@@ -10,6 +10,13 @@
     <logo>https://ndergg.github.io/images/avatar.png</logo>
     <icon>https://ndergg.github.io/favicon.ico</icon>
     <rights>All rights reserved 2019, 再书卿-</rights>
+    <entry>
+        <title type="html"><![CDATA[生命因磨练而美丽]]></title>
+        <id>https://ndergg.github.io/post/sheng-ming-yin-mo-lian-er-mei-li</id>
+        <link href="https://ndergg.github.io/post/sheng-ming-yin-mo-lian-er-mei-li">
+        </link>
+        <updated>2019-08-21T02:44:06.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[未来的你会感谢现在努力的自己]]></title>
         <id>https://ndergg.github.io/post/wei-lai-de-ni-hui-gan-xie-xian-zai-nu-li-de-zi-ji</id>
