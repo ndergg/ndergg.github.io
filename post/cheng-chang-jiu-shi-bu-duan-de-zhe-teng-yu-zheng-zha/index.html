@@ -1,89 +1,95 @@
+
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>成长,就是不断的折腾与挣扎 | 再书卿-</title>
-<meta name="description" content="你不必低调,你应该为你的努力自豪~" />
-<link rel="shortcut icon" href="https://ndergg.github.io/favicon.ico?v=1566355483252">
+    
+<meta charset="utf-8" >
+
+<title>成长,就是不断的折腾与挣扎 | 教书的先生-</title>
+<meta name="description" content="你不必低调,你应该为你的努力自豪~">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://ndergg.github.io/favicon.ico?v=1567070483310">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://ndergg.github.io/styles/main.css">
 
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://ndergg.github.io">
-  <img class="avatar" src="https://ndergg.github.io/images/avatar.png?v=1566355483252" alt="">
-  </a>
-  <h1 class="site-title">
-    再书卿-
-  </h1>
-  <p class="site-description">
-    你不必低调,你应该为你的努力自豪~
-  </p>
-  <div class="menu-container">
-    
-      
-        <a href="/" class="menu">
-          首页
-        </a>
-      
-    
-      
-        <a href="/archives" class="menu">
-          归档
-        </a>
-      
-    
-      
-        <a href="/post/about" class="menu">
-          关于
-        </a>
-      
-    
-  </div>
-  <div class="social-container">
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://ndergg.github.io">
+        <img class="avatar" src="https://ndergg.github.io/images/avatar.png?v=1567070483310" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://ndergg.github.io">
+        <h1 class="site-title">教书的先生-</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
   </div>
 </div>
 
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
+        
+          <a href="/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="/post/about" class="menu purple-link">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+      <div class="content-container">
         <div class="post-detail">
-          <article class="post">
-            <h2 class="post-title">
-              成长,就是不断的折腾与挣扎
-            </h2>
-            <div class="post-info">
-              <span>
-                2019-08-15
-              </span>
-              <span>
-                1 min read
-              </span>
-              
+          
+            <div class="feature-container" style="background-image: url('https://ndergg.github.io/post-images/cheng-chang-jiu-shi-bu-duan-de-zhe-teng-yu-zheng-zha.png')">
             </div>
+          
+          <h2 class="post-title">成长,就是不断的折腾与挣扎</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2019-08-15</span>
             
-              <img class="post-feature-image" src="https://ndergg.github.io/post-images/cheng-chang-jiu-shi-bu-duan-de-zhe-teng-yu-zheng-zha.png" alt="">
-            
-            <div class="post-content-wrapper">
-              <div class="post-content">
-                <p>她，开着几百万的玛莎利蒂在中州路奔驰，银行贷款却有一百万，挣扎在生与死的边缘。</p>
+          </div>
+          <div class="post-content">
+            <p>她，开着几百万的玛莎利蒂在中州路奔驰，银行贷款却有一百万，挣扎在生与死的边缘。</p>
 <p>她，天天开比亚迪上下班，却还在为几十万的房贷发愁，生活在水生火热之中</p>
 <p>她，每天挤9路公交车从老城到涧西，存款有十万，生活的安逸却又迷茫。</p>
 <p>三人在路上相遇了，挤公交车的非常羡慕开比亚迪的，开比亚迪的又非常羡慕开玛莎拉蒂的。而开玛莎拉蒂的又非常羡慕挤公交的。</p>
@@ -113,101 +119,86 @@
 <p>趁着年轻，走出去，接受风霜雨雪的洗礼。</p>
 <p>去练就忍耐豁达的内心，去追寻你的梦想。</p>
 
-              </div>
-              <div class="toc-container">
-                
-              </div>
-            </div>
-          </article>
+          </div>
         </div>
 
         
           <div class="next-post">
-            <div class="next">下一篇</div>
-            <a href="https://ndergg.github.io/post/bao-yuan-shi-dui-zi-ji-wu-neng-de-fen-kai">
+            <a class="purple-link" href="https://ndergg.github.io/post/bao-yuan-shi-dui-zi-ji-wu-neng-de-fen-kai">
               <h3 class="post-title">
-                抱怨,是对自己无能的愤慨
+                下一篇：抱怨,是对自己无能的愤慨
               </h3>
             </a>
           </div>
+          
+      </div>
+
+      
+        
+          <div id="gitalk-container"></div>
         
 
         
-          
-            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+      
 
-<div id="gitalk-container"></div>
-
-<script>
-
-  var gitalk = new Gitalk({
-    clientID: '2f35383e8e14a0a21331',
-    clientSecret: '92f6ac5df4cec1c652bb2e7657ad3dc1bcc7eda7',
-    repo: 'ndergg.github.io',
-    owner: 'ndergg',
-    admin: ['ndergg'],
-    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
-    distractionFreeMode: false  // Facebook-like distraction free mode
-  })
-
-  gitalk.render('gitalk-container')
-
-</script>
-
-          
-
-          
-        
-
-        <div class="site-footer">
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | 
-  <a class="rss" href="https://ndergg.github.io/atom.xml" target="_blank">RSS</a>
+      <div class="site-footer">
+  <div class="slogan">你不必低调,你应该为你的努力自豪~</div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://ndergg.github.io/atom.xml" target="_blank">RSS</a>
 </div>
 
-<script>
-  hljs.initHighlightingOnLoad()
 
-  let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+    </div>
+    <script type="application/javascript">
 
-  // This should probably be throttled.
-  // Especially because it triggers during smooth scrolling.
-  // https://lodash.com/docs/4.17.10#throttle
-  // You could do like...
-  // window.addEventListener("scroll", () => {
-  //    _.throttle(doThatStuff, 100);
-  // });
-  // Only not doing it here to keep this Pen dependency-free.
+hljs.initHighlightingOnLoad()
 
-  window.addEventListener("scroll", event => {
-    let fromTop = window.scrollY;
-
-    mainNavLinks.forEach((link, index) => {
-      let section = document.getElementById(decodeURI(link.hash).substring(1));
-      let nextSection = null
-      if (mainNavLinks[index + 1]) {
-        nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
-      }
-      console.log('section.offsetHeight', section.offsetHeight);
-      if (section.offsetTop <= fromTop) {
-        if (nextSection) {
-          if (nextSection.offsetTop > fromTop) {
-            link.classList.add("current");
-          } else {
-            link.classList.remove("current");    
-          }
-        } else {
-          link.classList.add("current");
-        }
-      } else {
-        link.classList.remove("current");
-      }
-    });
-  });
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
 
 </script>
 
-      </div>
-    </div>
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '2f35383e8e14a0a21331',
+        clientSecret: '92f6ac5df4cec1c652bb2e7657ad3dc1bcc7eda7',
+        repo: 'ndergg.github.io',
+        owner: 'ndergg',
+        admin: ['ndergg'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
   </body>
 </html>

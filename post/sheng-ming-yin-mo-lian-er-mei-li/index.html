@@ -1,54 +1,131 @@
+
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>生命因磨练而美丽 | 再书卿-</title>
-<meta name="description" content="你不必低调,你应该为你的努力自豪~" />
-<link rel="shortcut icon" href="https://ndergg.github.io/favicon.ico?v=1566355483252">
+    
+<meta charset="utf-8" >
+
+<title>生命因磨练而美丽 | 教书的先生-</title>
+<meta name="description" content="你不必低调,你应该为你的努力自豪~">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://ndergg.github.io/favicon.ico?v=1567070483310">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://ndergg.github.io/styles/main.css">
 
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://ndergg.github.io">
-  <img class="avatar" src="https://ndergg.github.io/images/avatar.png?v=1566355483252" alt="">
-  </a>
-  <h1 class="site-title">
-    再书卿-
-  </h1>
-  <p class="site-description">
-    你不必低调,你应该为你的努力自豪~
-  </p>
-  <div class="menu-container">
-    
-      
-        <a href="/" class="menu">
-          首页
-        </a>
-      
-    
-      
-        <a href="/archives" class="menu">
-          归档
-        </a>
-      
-    
-      
-        <a href="/post/about" class="menu">
-          关于
-        </a>
-      
-    
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://ndergg.github.io">
+        <img class="avatar" src="https://ndergg.github.io/images/avatar.png?v=1567070483310" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://ndergg.github.io">
+        <h1 class="site-title">教书的先生-</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
   </div>
+</div>
+
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
+        
+          <a href="/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="/post/about" class="menu purple-link">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+      <div class="content-container">
+        <div class="post-detail">
+          
+            <div class="feature-container" style="background-image: url('https://ndergg.github.io/post-images/sheng-ming-yin-mo-lian-er-mei-li.jpg')">
+            </div>
+          
+          <h2 class="post-title">生命因磨练而美丽</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2019-08-21</span>
+            
+          </div>
+          <div class="post-content">
+            <p>平心而论，谁也不希望自己的生命经常忍受磨炼--折磨式的历练，哪怕真的是因此可以增加人的美丽，也不会有人欢呼着说：“啊，我多么喜欢折磨式的历练呀。”人总是向往平坦和安然的。然而，不幸的是，折磨对生命之袭来，并不以人的主观愿望为依据，不论人们喜欢与否，它只管我行我素，甚至有时还要强加于人，谁奈它何？</p>
+<p>既然如此，人们为什么不让自己振作起来去迎接这挑战呢？人们为什么不能把它变作某种养分去滋润自己的美丽呢？人们回避磨炼，是因为不想忍受它，当回避不了时，人们又说，磨炼原来是可以美丽人生的，两边皆有道理。</p>
+<p>避开折磨是生命的最佳选择，一旦躲避不开，就让折磨变作美丽人生的养分，此亦是生命的最佳选择。之所以说此亦是生命的最佳选择，乃是因为，人们在陷进折磨时，他面对的选择不止一个，比如说痛苦、焦灼、失恋、迷茫、束手无策或一蹶不振，而这些选择，就没有一个具有积极的性质，皆是对人生的消沉与颓废。比起这些选择，惟有选择让折磨变作美丽人生的养分，方才算是最佳。</p>
+<p>生命因磨炼而美丽，关键在于人对磨炼认识的角度和深度。应该说，磨炼本身就具有美丽人生的功能，假若由于认识上的原因，反让磨炼把自己丑化了，这就有点雪上加霜的味道了，除了磨炼的起因之外，你只好谁也甭怪。鉴于以上原因，所以也并非是说，谁的生命都会因磨炼而生美丽的，生丑陋者也大有人在。</p>
+<p>生命因磨炼而美丽，不仅仅因为生命需要在磨炼中成长，主要在于，磨炼对生命的不可回避性。人群之中，物欲横流，而且方向和力度又不尽相同，谁料得到何时何地就会滋生出一种针对自己的折磨来呢？料不到又必须随，随又不想使自己一蹶不振地消沉，这样，经过努力，使其转化为自己有用的能量，就成为人之不选之选。这时候的磨炼对生命来说，已变作美丽的阶梯，虽然阶梯的旁边充满荆棘，但在阶梯尽处，却充满鲜花，坦然走过荆棘，就必然置身于另外一重天地。</p>
+<p>生命因磨炼而美丽，还在于它使人生收获了用金钱也买不到的某种负面阅历。人生阅历，正面的居多，人生的教诲，善良的居多，这些东西，都构不成对人生的考验，惟有折磨具备这种恶质。常言不是说“猪圈难养千里马，花盆难栽万年松”吗？为什么会是这样的呢？就是因为其缺乏考验的机会。不光是此，生活中的其他事情也一样，凡没有接受过考验者，你就很难断言它是否完整和美丽。而这种考验，又非是谁有计划地出的考试题，它是不期然而然地就横亘在了人的面前，使人猝不及防。由于它的这种突发性质，所以它之于人考验的意味就足得很。经此一番挣扎磨炼，人没有颓废，反而更加精神了，这样的生命不走向美丽还走向哪里呢？</p>
+<p>固然，磨炼也是可以丑陋人生的。人生原本还有点美丽，经过数次折磨式的履历之后，但没有使其成熟和美丽，反倒使它充满痛苦、迷茫、彷徨，甚至瞻前顾后，畏首畏尾，唯唯诺诺，没有一点棱角脾气了，这是不是有点丑陋呢？`</p>
+<p>对于这些人来说，所有的磨炼都不能称之为磨炼，而是灾难。总而言之，只要有点挫折和难受，就无不如同灾难临身，什么坐卧不安呀、神不守舍呀、食不知味呀等等，这些消耗情绪的东西就都来了。如此人生，让它如何从废墟中走向美丽呢？一颗心已被灾难二字占满，体会它尚且不够，可能让他分出心来瞄一眼灾难背后的美丽？所谓的灾难，其本身已使人不堪忍受，再要以此种心态情绪去强化它对人的伤害，这不是越瘸越使棍打了吗？人生难美，是不是就这样被自己注定了呢？</p>
+<p>这样对磨炼的感受，实际上大可不必。</p>
+<p>退一步说，假若你无力使折磨变作美丽生命的阶梯，却也不该使它变作生命的灾难之门。在美丽与灾难之间，保持个中立的态度如何？即以无所谓的心态来对待它如何？这样做，至少生命不会出现消极现象，不消极不就说明其中有积极因素吗？这远比把磨炼视作灾难的认识事物的方法要乐观得多。</p>
+<p>在某些时候，人生的精神财富比物质财富也许显得更重要，人们是不应该对之忽略的。精神财富的获得，有许多方法，而不断地经受磨炼，是其方法之一，或者说是最重要的方法之一。而人生之美丽与否，首先可看的也就是他的精神财富多寡，而不是依据他的物质财富多寡。生命因磨炼而美丽，美就美在此处。</p>
+<p>不错，人总是希望平坦和安危的，谁也不想要折磨式的历练。但是它却没有因此而不来，作为被动的承受者，又不想就此妥协，那么，就拿出你的智慧，化腐朽为神奇吧，人生将因此而走向美丽，虽然此属于被迫的性质，也比无所作为要好。歪打正着，亦弥足珍贵。</p>
+
+          </div>
+        </div>
+
+        
+          <div class="next-post">
+            <a class="purple-link" href="https://ndergg.github.io/post/wei-lai-de-ni-hui-gan-xie-xian-zai-nu-li-de-zi-ji">
+              <h3 class="post-title">
+                下一篇：未来的你会感谢现在努力的自己
+              </h3>
+            </a>
+          </div>
+          
+      </div>
+
+      
+        
+          <div id="gitalk-container"></div>
+        
+
+        
+      
+
+      <div class="site-footer">
+  <div class="slogan">你不必低调,你应该为你的努力自豪~</div>
   <div class="social-container">
     
       
@@ -62,135 +139,49 @@
       
     
   </div>
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://ndergg.github.io/atom.xml" target="_blank">RSS</a>
 </div>
 
-        <div class="post-detail">
-          <article class="post">
-            <h2 class="post-title">
-              生命因磨练而美丽
-            </h2>
-            <div class="post-info">
-              <span>
-                2019-08-21
-              </span>
-              <span>
-                1 min read
-              </span>
-              
-            </div>
-            
-              <img class="post-feature-image" src="https://ndergg.github.io/post-images/sheng-ming-yin-mo-lian-er-mei-li.jpg" alt="">
-            
-            <div class="post-content-wrapper">
-              <div class="post-content">
-                <p>平心而论，谁也不希望自己的生命经常忍受磨炼--折磨式的历练，哪怕真的是因此可以增加人的美丽，也不会有人欢呼着说：“啊，我多么喜欢折磨式的历练呀。”人总是向往平坦和安然的。然而，不幸的是，折磨对生命之袭来，并不以人的主观愿望为依据，不论人们喜欢与否，它只管我行我素，甚至有时还要强加于人，谁奈它何？</p>
-<p>既然如此，人们为什么不让自己振作起来去迎接这挑战呢？人们为什么不能把它变作某种养分去滋润自己的美丽呢？人们回避磨炼，是因为不想忍受它，当回避不了时，人们又说，磨炼原来是可以美丽人生的，两边皆有道理。</p>
-<p>避开折磨是生命的最佳选择，一旦躲避不开，就让折磨变作美丽人生的养分，此亦是生命的最佳选择。之所以说此亦是生命的最佳选择，乃是因为，人们在陷进折磨时，他面对的选择不止一个，比如说痛苦、焦灼、失恋、迷茫、束手无策或一蹶不振，而这些选择，就没有一个具有积极的性质，皆是对人生的消沉与颓废。比起这些选择，惟有选择让折磨变作美丽人生的养分，方才算是最佳。</p>
-<p>生命因磨炼而美丽，关键在于人对磨炼认识的角度和深度。应该说，磨炼本身就具有美丽人生的功能，假若由于认识上的原因，反让磨炼把自己丑化了，这就有点雪上加霜的味道了，除了磨炼的起因之外，你只好谁也甭怪。鉴于以上原因，所以也并非是说，谁的生命都会因磨炼而生美丽的，生丑陋者也大有人在。</p>
-<p>生命因磨炼而美丽，不仅仅因为生命需要在磨炼中成长，主要在于，磨炼对生命的不可回避性。人群之中，物欲横流，而且方向和力度又不尽相同，谁料得到何时何地就会滋生出一种针对自己的折磨来呢？料不到又必须随，随又不想使自己一蹶不振地消沉，这样，经过努力，使其转化为自己有用的能量，就成为人之不选之选。这时候的磨炼对生命来说，已变作美丽的阶梯，虽然阶梯的旁边充满荆棘，但在阶梯尽处，却充满鲜花，坦然走过荆棘，就必然置身于另外一重天地。</p>
-<p>生命因磨炼而美丽，还在于它使人生收获了用金钱也买不到的某种负面阅历。人生阅历，正面的居多，人生的教诲，善良的居多，这些东西，都构不成对人生的考验，惟有折磨具备这种恶质。常言不是说“猪圈难养千里马，花盆难栽万年松”吗？为什么会是这样的呢？就是因为其缺乏考验的机会。不光是此，生活中的其他事情也一样，凡没有接受过考验者，你就很难断言它是否完整和美丽。而这种考验，又非是谁有计划地出的考试题，它是不期然而然地就横亘在了人的面前，使人猝不及防。由于它的这种突发性质，所以它之于人考验的意味就足得很。经此一番挣扎磨炼，人没有颓废，反而更加精神了，这样的生命不走向美丽还走向哪里呢？</p>
-<p>固然，磨炼也是可以丑陋人生的。人生原本还有点美丽，经过数次折磨式的履历之后，但没有使其成熟和美丽，反倒使它充满痛苦、迷茫、彷徨，甚至瞻前顾后，畏首畏尾，唯唯诺诺，没有一点棱角脾气了，这是不是有点丑陋呢？`</p>
-<p>对于这些人来说，所有的磨炼都不能称之为磨炼，而是灾难。总而言之，只要有点挫折和难受，就无不如同灾难临身，什么坐卧不安呀、神不守舍呀、食不知味呀等等，这些消耗情绪的东西就都来了。如此人生，让它如何从废墟中走向美丽呢？一颗心已被灾难二字占满，体会它尚且不够，可能让他分出心来瞄一眼灾难背后的美丽？所谓的灾难，其本身已使人不堪忍受，再要以此种心态情绪去强化它对人的伤害，这不是越瘸越使棍打了吗？人生难美，是不是就这样被自己注定了呢？</p>
-<p>这样对磨炼的感受，实际上大可不必。</p>
-<p>退一步说，假若你无力使折磨变作美丽生命的阶梯，却也不该使它变作生命的灾难之门。在美丽与灾难之间，保持个中立的态度如何？即以无所谓的心态来对待它如何？这样做，至少生命不会出现消极现象，不消极不就说明其中有积极因素吗？这远比把磨炼视作灾难的认识事物的方法要乐观得多。</p>
-<p>在某些时候，人生的精神财富比物质财富也许显得更重要，人们是不应该对之忽略的。精神财富的获得，有许多方法，而不断地经受磨炼，是其方法之一，或者说是最重要的方法之一。而人生之美丽与否，首先可看的也就是他的精神财富多寡，而不是依据他的物质财富多寡。生命因磨炼而美丽，美就美在此处。</p>
-<p>不错，人总是希望平坦和安危的，谁也不想要折磨式的历练。但是它却没有因此而不来，作为被动的承受者，又不想就此妥协，那么，就拿出你的智慧，化腐朽为神奇吧，人生将因此而走向美丽，虽然此属于被迫的性质，也比无所作为要好。歪打正着，亦弥足珍贵。</p>
 
-              </div>
-              <div class="toc-container">
-                
-              </div>
-            </div>
-          </article>
-        </div>
-
-        
-          <div class="next-post">
-            <div class="next">下一篇</div>
-            <a href="https://ndergg.github.io/post/wei-lai-de-ni-hui-gan-xie-xian-zai-nu-li-de-zi-ji">
-              <h3 class="post-title">
-                未来的你会感谢现在努力的自己
-              </h3>
-            </a>
-          </div>
-        
-
-        
-          
-            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-
-<div id="gitalk-container"></div>
-
-<script>
-
-  var gitalk = new Gitalk({
-    clientID: '2f35383e8e14a0a21331',
-    clientSecret: '92f6ac5df4cec1c652bb2e7657ad3dc1bcc7eda7',
-    repo: 'ndergg.github.io',
-    owner: 'ndergg',
-    admin: ['ndergg'],
-    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
-    distractionFreeMode: false  // Facebook-like distraction free mode
-  })
-
-  gitalk.render('gitalk-container')
-
-</script>
-
-          
-
-          
-        
-
-        <div class="site-footer">
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | 
-  <a class="rss" href="https://ndergg.github.io/atom.xml" target="_blank">RSS</a>
-</div>
-
-<script>
-  hljs.initHighlightingOnLoad()
-
-  let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
-
-  // This should probably be throttled.
-  // Especially because it triggers during smooth scrolling.
-  // https://lodash.com/docs/4.17.10#throttle
-  // You could do like...
-  // window.addEventListener("scroll", () => {
-  //    _.throttle(doThatStuff, 100);
-  // });
-  // Only not doing it here to keep this Pen dependency-free.
-
-  window.addEventListener("scroll", event => {
-    let fromTop = window.scrollY;
-
-    mainNavLinks.forEach((link, index) => {
-      let section = document.getElementById(decodeURI(link.hash).substring(1));
-      let nextSection = null
-      if (mainNavLinks[index + 1]) {
-        nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
-      }
-      console.log('section.offsetHeight', section.offsetHeight);
-      if (section.offsetTop <= fromTop) {
-        if (nextSection) {
-          if (nextSection.offsetTop > fromTop) {
-            link.classList.add("current");
-          } else {
-            link.classList.remove("current");    
-          }
-        } else {
-          link.classList.add("current");
-        }
-      } else {
-        link.classList.remove("current");
-      }
-    });
-  });
-
-</script>
-
-      </div>
     </div>
+    <script type="application/javascript">
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '2f35383e8e14a0a21331',
+        clientSecret: '92f6ac5df4cec1c652bb2e7657ad3dc1bcc7eda7',
+        repo: 'ndergg.github.io',
+        owner: 'ndergg',
+        admin: ['ndergg'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
   </body>
 </html>

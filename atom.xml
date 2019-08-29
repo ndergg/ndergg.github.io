@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ndergg.github.io</id>
-    <title>再书卿-</title>
-    <updated>2019-08-21T02:44:48.590Z</updated>
+    <title>教书的先生-</title>
+    <updated>2019-08-29T09:21:52.047Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ndergg.github.io"/>
     <link rel="self" href="https://ndergg.github.io/atom.xml"/>
     <subtitle>你不必低调,你应该为你的努力自豪~</subtitle>
     <logo>https://ndergg.github.io/images/avatar.png</logo>
     <icon>https://ndergg.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2019, 再书卿-</rights>
+    <rights>All rights reserved 2019, 教书的先生-</rights>
     <entry>
         <title type="html"><![CDATA[生命因磨练而美丽]]></title>
         <id>https://ndergg.github.io/post/sheng-ming-yin-mo-lian-er-mei-li</id>

@@ -1,93 +1,105 @@
+
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>肯定当下的自己,你肯定有比别人强的地方 | 再书卿-</title>
-<meta name="description" content="你不必低调,你应该为你的努力自豪~" />
-<link rel="shortcut icon" href="https://ndergg.github.io/favicon.ico?v=1566355483252">
+    
+<meta charset="utf-8" >
+
+<title>肯定当下的自己,你肯定有比别人强的地方 | 教书的先生-</title>
+<meta name="description" content="你不必低调,你应该为你的努力自豪~">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://ndergg.github.io/favicon.ico?v=1567070483310">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://ndergg.github.io/styles/main.css">
 
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://ndergg.github.io">
-  <img class="avatar" src="https://ndergg.github.io/images/avatar.png?v=1566355483252" alt="">
-  </a>
-  <h1 class="site-title">
-    再书卿-
-  </h1>
-  <p class="site-description">
-    你不必低调,你应该为你的努力自豪~
-  </p>
-  <div class="menu-container">
-    
-      
-        <a href="/" class="menu">
-          首页
-        </a>
-      
-    
-      
-        <a href="/archives" class="menu">
-          归档
-        </a>
-      
-    
-      
-        <a href="/post/about" class="menu">
-          关于
-        </a>
-      
-    
-  </div>
-  <div class="social-container">
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://ndergg.github.io">
+        <img class="avatar" src="https://ndergg.github.io/images/avatar.png?v=1567070483310" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://ndergg.github.io">
+        <h1 class="site-title">教书的先生-</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
   </div>
 </div>
 
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
+        
+          <a href="/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="/post/about" class="menu purple-link">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+      <div class="content-container">
         <div class="post-detail">
-          <article class="post">
-            <h2 class="post-title">
-              肯定当下的自己,你肯定有比别人强的地方
-            </h2>
-            <div class="post-info">
-              <span>
-                2019-08-14
-              </span>
-              <span>
-                1 min read
-              </span>
-              
-                <a href="https://ndergg.github.io/tag/YTNCi6IGi" class="post-tag">
-                  # 文章
-                </a>
-              
+          
+            <div class="feature-container" style="background-image: url('https://ndergg.github.io/post-images/ken-ding-dang-xia-de-zi-ji-ni-ken-ding-you-bi-bie-ren-qiang-de-di-fang.jfif')">
             </div>
+          
+          <h2 class="post-title">肯定当下的自己,你肯定有比别人强的地方</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2019-08-14</span>
             
-              <img class="post-feature-image" src="https://ndergg.github.io/post-images/ken-ding-dang-xia-de-zi-ji-ni-ken-ding-you-bi-bie-ren-qiang-de-di-fang.jfif" alt="">
+              <span>
+                <i class="icon-pricetags-outline"></i>
+                
+                  <a href="https://ndergg.github.io/tag/YTNCi6IGi">
+                    文章
+                    
+                  </a>
+                
+              </span>
             
-            <div class="post-content-wrapper">
-              <div class="post-content">
-                <p>人的一生，或幻灭，或燃烧。唯有肯定自己，生命才会尽情燃烧，才会活出精彩。每个人都应当从小就看重自己，在别人肯定你之前，你先要肯定自己！</p>
+          </div>
+          <div class="post-content">
+            <p>人的一生，或幻灭，或燃烧。唯有肯定自己，生命才会尽情燃烧，才会活出精彩。每个人都应当从小就看重自己，在别人肯定你之前，你先要肯定自己！</p>
 <p>人如果认为自己一生下来就已被判死刑，固执地把自己放在最不利的位置，那么活着不过是让苦难缠绕，而活下去也不过是形式一样，走到生命的终点罢了。这种想法，不但否定了自己，也否定了生命的存在价值。</p>
 <p>在有限岁月里的体现和燃烧，真正地绽放和诠释生命是一种存在，是跟时代吻合的存在。尽管地球不因为我们的存在而转动，时光也不因我们的努力而回到从前。尽管世界是唯物的，但肯定自己又何尝夸大了人的主观能动性？它只是肯定生命，只是肯定生命的价值。</p>
 <p>天空暗到一定程度，星星就会熠熠生辉。肯定自己，与华丽富有的生活无关，与清贫平淡的生活无关；肯定生命的价值不一定要轰轰烈烈的捐躯，不一定要分分秒秒的贡献。生命需要肯定，因为只有肯定了自己，生命才会被负有价值，人生才会焕发光。</p>
@@ -104,92 +116,78 @@
 <p>一个积极的自我形象是成功的第一步。有的人总是自惭形秽，存在自卑心理，其实就是不能肯定自我而缺乏信心。其实，人各有所长，各有其短。看不到自己长处的人，容易自卑进而自闭；看不到自己短处的人容易自负和自傲。正确的态度应该既看到自己的长处，又看到自己的短处。用长处鼓舞自己的信心，用短处来警戒自己不要骄傲。自信就是相信“天生我材必有用”。古人云：“疑人轻已者皆内不足。”自信是煤，成就是燃烧的火焰。煤是含有巨大能量的。</p>
 <p>肯定和欣赏自己，也要敢于发现自身的弱点，并勇于纠正。这样才能欣赏到不是丑陋的自以为是的自己，而是越来越完美的自己。</p>
 
-              </div>
-              <div class="toc-container">
-                
-              </div>
-            </div>
-          </article>
+          </div>
         </div>
 
         
+      </div>
 
+      
         
-          
-            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-
-<div id="gitalk-container"></div>
-
-<script>
-
-  var gitalk = new Gitalk({
-    clientID: '2f35383e8e14a0a21331',
-    clientSecret: '92f6ac5df4cec1c652bb2e7657ad3dc1bcc7eda7',
-    repo: 'ndergg.github.io',
-    owner: 'ndergg',
-    admin: ['ndergg'],
-    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
-    distractionFreeMode: false  // Facebook-like distraction free mode
-  })
-
-  gitalk.render('gitalk-container')
-
-</script>
-
-          
-
-          
+          <div id="gitalk-container"></div>
         
 
-        <div class="site-footer">
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | 
-  <a class="rss" href="https://ndergg.github.io/atom.xml" target="_blank">RSS</a>
+        
+      
+
+      <div class="site-footer">
+  <div class="slogan">你不必低调,你应该为你的努力自豪~</div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://ndergg.github.io/atom.xml" target="_blank">RSS</a>
 </div>
 
-<script>
-  hljs.initHighlightingOnLoad()
 
-  let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+    </div>
+    <script type="application/javascript">
 
-  // This should probably be throttled.
-  // Especially because it triggers during smooth scrolling.
-  // https://lodash.com/docs/4.17.10#throttle
-  // You could do like...
-  // window.addEventListener("scroll", () => {
-  //    _.throttle(doThatStuff, 100);
-  // });
-  // Only not doing it here to keep this Pen dependency-free.
+hljs.initHighlightingOnLoad()
 
-  window.addEventListener("scroll", event => {
-    let fromTop = window.scrollY;
-
-    mainNavLinks.forEach((link, index) => {
-      let section = document.getElementById(decodeURI(link.hash).substring(1));
-      let nextSection = null
-      if (mainNavLinks[index + 1]) {
-        nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
-      }
-      console.log('section.offsetHeight', section.offsetHeight);
-      if (section.offsetTop <= fromTop) {
-        if (nextSection) {
-          if (nextSection.offsetTop > fromTop) {
-            link.classList.add("current");
-          } else {
-            link.classList.remove("current");    
-          }
-        } else {
-          link.classList.add("current");
-        }
-      } else {
-        link.classList.remove("current");
-      }
-    });
-  });
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
 
 </script>
 
-      </div>
-    </div>
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '2f35383e8e14a0a21331',
+        clientSecret: '92f6ac5df4cec1c652bb2e7657ad3dc1bcc7eda7',
+        repo: 'ndergg.github.io',
+        owner: 'ndergg',
+        admin: ['ndergg'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
   </body>
 </html>

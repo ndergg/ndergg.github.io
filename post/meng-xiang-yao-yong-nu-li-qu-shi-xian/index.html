@@ -1,89 +1,95 @@
+
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>梦想要用努力去实现 | 再书卿-</title>
-<meta name="description" content="你不必低调,你应该为你的努力自豪~" />
-<link rel="shortcut icon" href="https://ndergg.github.io/favicon.ico?v=1566355483252">
+    
+<meta charset="utf-8" >
+
+<title>梦想要用努力去实现 | 教书的先生-</title>
+<meta name="description" content="你不必低调,你应该为你的努力自豪~">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://ndergg.github.io/favicon.ico?v=1567070483310">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://ndergg.github.io/styles/main.css">
 
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://ndergg.github.io">
-  <img class="avatar" src="https://ndergg.github.io/images/avatar.png?v=1566355483252" alt="">
-  </a>
-  <h1 class="site-title">
-    再书卿-
-  </h1>
-  <p class="site-description">
-    你不必低调,你应该为你的努力自豪~
-  </p>
-  <div class="menu-container">
-    
-      
-        <a href="/" class="menu">
-          首页
-        </a>
-      
-    
-      
-        <a href="/archives" class="menu">
-          归档
-        </a>
-      
-    
-      
-        <a href="/post/about" class="menu">
-          关于
-        </a>
-      
-    
-  </div>
-  <div class="social-container">
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://ndergg.github.io">
+        <img class="avatar" src="https://ndergg.github.io/images/avatar.png?v=1567070483310" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://ndergg.github.io">
+        <h1 class="site-title">教书的先生-</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
   </div>
 </div>
 
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
+        
+          <a href="/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="/post/about" class="menu purple-link">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+      <div class="content-container">
         <div class="post-detail">
-          <article class="post">
-            <h2 class="post-title">
-              梦想要用努力去实现
-            </h2>
-            <div class="post-info">
-              <span>
-                2019-08-17
-              </span>
-              <span>
-                1 min read
-              </span>
-              
+          
+            <div class="feature-container" style="background-image: url('https://ndergg.github.io/post-images/meng-xiang-yao-yong-nu-li-qu-shi-xian.jfif')">
             </div>
+          
+          <h2 class="post-title">梦想要用努力去实现</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2019-08-17</span>
             
-              <img class="post-feature-image" src="https://ndergg.github.io/post-images/meng-xiang-yao-yong-nu-li-qu-shi-xian.jfif" alt="">
-            
-            <div class="post-content-wrapper">
-              <div class="post-content">
-                <p>生活是自己的，所以需要我们努力去实现我们的梦想。</p>
+          </div>
+          <div class="post-content">
+            <p>生活是自己的，所以需要我们努力去实现我们的梦想。</p>
 <p>人生是对理想的追求，理想是人生的指示灯，失去了这灯的作用，就会失去生活的勇气，因此只有坚持远大的人生理想，才不会在生活的海洋中迷失方向，托尔斯泰将人生的理想分成一辈子的理想，一个阶段的理想，一年的理想，一个月的理想，甚至一天，一小时，一分钟的理想。有一位哲人说过，梦里走了许多路，醒来还是在床上，他形象的告诉我们一个道理，人不能躺在梦幻式的理想生活中，更需要大胆努力的去做，在理想中躺着等待新的开始，不仅遥遥无期，甚至连已经拥有的也会失去，</p>
 <p>习总突出强调，中国梦归根结底是人民的梦，这一重要思想，鲜明地表明了中国梦蕴涵的人民主体本质属性，也阐明了中国梦的根本目的，作为个人，就是要尽力实现自己的梦想，汇集小流成为江海，我们要从以下做起：</p>
 <p>敢于决断－－克服犹豫不定的习性</p>
@@ -107,101 +113,86 @@
 <p>凭着自己的智慧，奋斗与坚持，就能创造梦想，改写命运，大家怀着对梦境的憧憬，心中充满着喜悦和欢快，翘首企盼，仿佛那个梦就在不远处向自己招手，也激发着我们去奋斗实现。</p>
 <p>生活是我们自己的，有梦想，就要用努力去实现。</p>
 
-              </div>
-              <div class="toc-container">
-                
-              </div>
-            </div>
-          </article>
+          </div>
         </div>
 
         
           <div class="next-post">
-            <div class="next">下一篇</div>
-            <a href="https://ndergg.github.io/post/ji-ran-huo-zhao-bu-bi-bao-yuan">
+            <a class="purple-link" href="https://ndergg.github.io/post/ji-ran-huo-zhao-bu-bi-bao-yuan">
               <h3 class="post-title">
-                既然活着,不必抱怨
+                下一篇：既然活着,不必抱怨
               </h3>
             </a>
           </div>
+          
+      </div>
+
+      
+        
+          <div id="gitalk-container"></div>
         
 
         
-          
-            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+      
 
-<div id="gitalk-container"></div>
-
-<script>
-
-  var gitalk = new Gitalk({
-    clientID: '2f35383e8e14a0a21331',
-    clientSecret: '92f6ac5df4cec1c652bb2e7657ad3dc1bcc7eda7',
-    repo: 'ndergg.github.io',
-    owner: 'ndergg',
-    admin: ['ndergg'],
-    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
-    distractionFreeMode: false  // Facebook-like distraction free mode
-  })
-
-  gitalk.render('gitalk-container')
-
-</script>
-
-          
-
-          
-        
-
-        <div class="site-footer">
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | 
-  <a class="rss" href="https://ndergg.github.io/atom.xml" target="_blank">RSS</a>
+      <div class="site-footer">
+  <div class="slogan">你不必低调,你应该为你的努力自豪~</div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://ndergg.github.io/atom.xml" target="_blank">RSS</a>
 </div>
 
-<script>
-  hljs.initHighlightingOnLoad()
 
-  let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+    </div>
+    <script type="application/javascript">
 
-  // This should probably be throttled.
-  // Especially because it triggers during smooth scrolling.
-  // https://lodash.com/docs/4.17.10#throttle
-  // You could do like...
-  // window.addEventListener("scroll", () => {
-  //    _.throttle(doThatStuff, 100);
-  // });
-  // Only not doing it here to keep this Pen dependency-free.
+hljs.initHighlightingOnLoad()
 
-  window.addEventListener("scroll", event => {
-    let fromTop = window.scrollY;
-
-    mainNavLinks.forEach((link, index) => {
-      let section = document.getElementById(decodeURI(link.hash).substring(1));
-      let nextSection = null
-      if (mainNavLinks[index + 1]) {
-        nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
-      }
-      console.log('section.offsetHeight', section.offsetHeight);
-      if (section.offsetTop <= fromTop) {
-        if (nextSection) {
-          if (nextSection.offsetTop > fromTop) {
-            link.classList.add("current");
-          } else {
-            link.classList.remove("current");    
-          }
-        } else {
-          link.classList.add("current");
-        }
-      } else {
-        link.classList.remove("current");
-      }
-    });
-  });
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
 
 </script>
 
-      </div>
-    </div>
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '2f35383e8e14a0a21331',
+        clientSecret: '92f6ac5df4cec1c652bb2e7657ad3dc1bcc7eda7',
+        repo: 'ndergg.github.io',
+        owner: 'ndergg',
+        admin: ['ndergg'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
   </body>
 </html>
